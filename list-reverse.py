@@ -19,3 +19,4 @@ def reverse_recurse(my_list):
 lloyd_list = [7, 5, 7, 3, 2, 4, 1, 2, 6]
 print(reverse_loop(lloyd_list))
 print(reverse_recurse(lloyd_list))
+print(lloyd_list == (reverse_recurse(reverse_loop(lloyd_list[:]))))
