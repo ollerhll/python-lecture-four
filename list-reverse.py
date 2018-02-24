@@ -13,7 +13,8 @@ def reverse_recurse(my_list):
     else:
         reversed_list = reverse_recurse(my_list[1:])
         reversed_list.append(my_list[0])
-        return reversed_list
+        my_list = reversed_list
+        return my_list
 
 lloyd_list = [7, 5, 7, 3, 2, 4, 1, 2, 6]
 print(reverse_loop(lloyd_list))
