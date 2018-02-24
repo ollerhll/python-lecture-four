@@ -2,8 +2,8 @@ def reverse_loop(my_list):
     length = len(my_list)
     for i in range(length // 2):
         temp_value = my_list[i]
-        my_list[i] = my_list[(length - 1) - i]
-        my_list[(length - 1) - i] = temp_value
+        my_list[i] = my_list[-(1 + i)]
+        my_list[-(1 + i)] = temp_value
     return my_list
 
 def reverse_recurse(my_list):
